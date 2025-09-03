@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Система приемки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Система приемки</h1>
+
+  <section id="scan-section">
+    <label>Сканируйте трек: <input type="text" id="track-input"></label>
+    <button id="search-btn">Найти</button>
+  </section>
+
+  <div id="product-info" style="display:none;">
+    <p id="product-name"></p>
+    <p>Ожидаемое количество: <span id="expected"></span></p>
+    <label>Принятое количество: <input type="number" id="received-input"></label>
+    <button id="submit-btn">Подтвердить</button>
+    <div id="barcode"></div>
+  </div>
+
+  <h2>Зеленая зона</h2>
+  <ul id="green-list"></ul>
+
+  <h2>Желтая зона</h2>
+  <ul id="yellow-list"></ul>
+
+  <hr>
+
+  <section id="admin-panel">
+    <h2>Админ панель</h2>
+    <h3>Серая зона</h3>
+    <ul id="grey-list"></ul>
+
+    <h3>Импорт базы товаров</h3>
+    <textarea id="import-data" placeholder='[{"track":"123","name":"Товар","expectedQty":5}]'></textarea>
+    <button id="import-btn">Импорт</button>
+
+    <h3>Экспорт принятых товаров</h3>
+    <button id="export-btn">Экспорт</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
