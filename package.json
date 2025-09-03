@@ -1,0 +1,10 @@
+{
+  "name": "activebox",
+  "version": "1.0.0",
+  "description": "Static site with warehouse receiving system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests\""
+  }
+}
